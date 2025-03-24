@@ -1,3 +1,5 @@
+from PyQt5.QtCore import QTime
+
 # write a code for saving text instructions for the app
 win_x, win_y = 200, 100
 win_width, win_height = 1000, 600
@@ -27,10 +29,16 @@ txt_hinttest3 = '0'
 txt_starttest1 = 'Start the first test'
 txt_starttest2 = 'Start doing squats'
 txt_starttest3 = 'Start the final test'
-txt_timer = ''
+time = QTime(0, 0, 15)
+txt_timer = time.toString("hh:mm:ss")
 
 
 txt_age = 'Full years:'
 txt_finalwin = 'Results'
 txt_index = 'Roufier Index: '
-txt_workheart = 'Cardiac performance: '
+txt_workheart = 'Cardiac performance:'
+txt_res1 = "low. See your doctor right away!"
+txt_res2 = "satisfactory. See your doctor!"
+txt_res3 = "average. It may be worth seeing your doctor to get checked out."
+txt_res4 = "above average"
+txt_res5 = "high"
